@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Events Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#">Window Events Lab</a><span class="tag">ПРАКТИКА №35</span></header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">JAVASCRIPT · BROWSER API</p>
+      <h1>Окно браузера<br><span>взаимодействует с вами</span></h1>
+      <p>Изменяйте размер окна, прокручивайте страницу и переключайтесь между вкладками — показатели обновляются автоматически.</p>
+    </section>
+    <section class="dashboard" aria-label="Показатели окна">
+      <article class="metric"><span class="metric-label">ШИРИНА ОКНА</span><strong id="window-width">—</strong><small>CSS-пикселей</small></article>
+      <article class="metric"><span class="metric-label">ПРОКРУТКА</span><strong id="scroll-y">0</strong><small>пикселей от верха</small></article>
+      <article class="metric"><span class="metric-label">СОСТОЯНИЕ</span><strong id="focus-status" class="status">Активно</strong><small>фокус вкладки</small></article>
+    </section>
+    <section class="welcome panel">
+      <div><p class="eyebrow">ПЕРСОНАЛИЗАЦИЯ</p><h2 id="greeting">Добро пожаловать!</h2><p>Нажмите кнопку, чтобы представиться.</p></div>
+      <button id="name-button" type="button">Представиться <span aria-hidden="true">→</span></button>
+    </section>
+    <section class="info panel">
+      <h2>Проверьте события</h2>
+      <div class="event-list">
+        <p><b>resize</b><span>Измените ширину окна браузера.</span></p>
+        <p><b>scroll</b><span>Прокрутите страницу вниз.</span></p>
+        <p><b>focus / blur</b><span>Переключитесь на другую вкладку и вернитесь.</span></p>
+        <p><b>prompt()</b><span>Нажмите «Представиться» и введите имя.</span></p>
+      </div>
+    </section>
+    <section class="extra"><p class="eyebrow">ПРОВЕРКА SCROLL</p><h2>Вы дошли до нижней части страницы</h2><p>Значение вертикальной прокрутки отображается в верхней панели показателей.</p></section>
+  </main>
+  <footer>Практическая работа №35 · Обработка событий окна</footer>
+</body>
+</html>
